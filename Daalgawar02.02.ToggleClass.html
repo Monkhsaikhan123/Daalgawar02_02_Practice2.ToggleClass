@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+            height:100vh;
+            background-color:gray;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap:5px;
+        }
+        .item1{
+            width:10%;
+            height:10%;
+            background-color:red;
+        }
+        .item2{
+            width:30%;
+            height:30%;
+            background-color:blue;
+        }
+        .item3{
+            width:20%;
+            height:20%;
+            background-color:green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1" id="neg"></div>
+        <div class="item item2" id="hoyr"></div>
+        <div class="item item3" id="gurav"></div>
+        <button onclick="toggle()">Toggle</button>
+    </div>
+    <script>
+        toggle = function(){
+            x = neg.className; 
+            neg.className = hoyr.className; 
+            hoyr.className = gurav.className; 
+            gurav.className = x; 
+        }
+    </script>
+</body>
+</html>
